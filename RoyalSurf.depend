@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1419249683 source:/home/hantlowt/Bureau/RoyalSurf/main.cpp
+	<iostream>
+	"Base.h"
+
+1419249435 /home/hantlowt/Bureau/RoyalSurf/include/Base.h
+	<stdio.h>
+	<GL/glut.h>
+
