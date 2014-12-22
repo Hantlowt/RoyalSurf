@@ -1,18 +1,20 @@
 #ifndef BASE_H
 #define BASE_H
 #include <stdio.h>
-#include <GL/glut.h>
+
 
 class Base
 {
     public:
         Base();
         ~Base();
-        void Init(int argc, char** argv);
-        void Idle();
+        void Init();
+        void Idle(double delta_time);
         void Draw();
         void Reshape();
+        bool isOpen();
     private:
+    bool m_isOpen;
     struct Mouse
     {
     int x;
@@ -23,6 +25,14 @@ class Base
     };
     typedef struct Mouse Mouse;
     Mouse mouse;
+    enum GameStat
+    {
+    MENU, GAME
+    };
+    typedef enum GameStat GameStat;
+    GameStat gamestat;
+    Game *game;
+
 
 };
 

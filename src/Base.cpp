@@ -1,32 +1,41 @@
 #include "Base.h"
+#include "Game.h"
 
 Base::Base()
 {
+this->m_isOpen = true;
     this->mouse.x = 0;
     this->mouse.y = 0;
     this->mouse.left = false;
     this->mouse.center = false;
     this->mouse.right = false;
+    gamestat = GAME;
 }
 
 Base::~Base()
 {
 
 }
-
-void Base::Init(int argc, char** argv)
+bool Base::isOpen()
 {
 
-//Initialisation d'OpenGL
-glutInit(&argc, argv);
-glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
-glutInitWindowPosition(100, 100);
-glutInitWindowSize(1024,768);
-glutCreateWindow(argv[0]);
-glEnable(GL_DEPTH_TEST);
-glutDisplayFunc(this->Draw);
-glutReshapeFunc(Reshape);
-//glutMouseFunc (onMouseClick);
-glutIdleFunc(Idle);
-glutMainLoop();
+return m_isOpen;
+}
+void Base::Init()
+{
+
+
+
+}
+
+void Base::Idle(double delta_time)
+{
+
+
+}
+
+void Base::Draw()
+{
+
+
 }
