@@ -1,9 +1,12 @@
 #include <iostream>
+#include "Base.h"
 
 using namespace std;
 
-int main()
+int main(int argc, char** argv)
 {
-    cout << "Hello world!" << endl;
+    cout << "Initiate ..." << endl;
+    Base *base = new Base();
+
     return 0;
 }
