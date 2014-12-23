@@ -7,3 +7,30 @@
 	<stdio.h>
 	<GL/glut.h>
 
+1419328416 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Base.cpp
+	"Base.h"
+	"Game.h"
+
+1419326298 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Base.h
+	<stdio.h>
+	"Game.h"
+
+1419326298 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/main.cpp
+	<GL/glut.h>
+	<iostream>
+	"Base.h"
+
+1419328133 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Game.h
+	"Draw.h"
+
+1419328133 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Game.cpp
+	"Game.h"
+
+1419289256 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Draw.h
+	<GL/glut.h>
+	<stdio.h>
+	<string.h>
+
+1419289256 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Draw.cpp
+	"Draw.h"
+

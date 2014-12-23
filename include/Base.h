@@ -1,6 +1,7 @@
 #ifndef BASE_H
 #define BASE_H
 #include <stdio.h>
+#include "Game.h"
 
 
 class Base
@@ -9,7 +10,7 @@ class Base
         Base();
         ~Base();
         void Init();
-        void Idle(double delta_time);
+        void Idle(float delta_time);
         void Draw();
         void Reshape();
         bool isOpen();
