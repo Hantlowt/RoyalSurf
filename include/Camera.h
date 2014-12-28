@@ -1,6 +1,7 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 #include <GL/glut.h>
+#include <iostream>
 
 class Camera
 {
@@ -8,6 +9,7 @@ class Camera
         Camera();
         ~Camera();
         void Draw();
+        void Move(int x, int y, GLfloat speed_x, GLfloat speed_y, float delta_time);
         GLfloat get_camera_position_x();
         GLfloat get_camera_position_y();
     private:

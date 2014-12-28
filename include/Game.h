@@ -1,6 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 #include "Draw.h"
+#include <iostream>
 #include "Camera.h"
 
 class Game
@@ -14,7 +15,7 @@ class Game
         void MouseFunc(int button, int state, int x, int y);
     private:
     int m_score;
-
+    float delta;
     struct Background_Color
     {
     GLfloat R;

@@ -7,6 +7,7 @@ this->m_background_color.R = 0;
 this->m_background_color.G = 1;
 this->m_background_color.B = 1;
 this->m_background_color.T = 0;
+this->delta = 1;
 camera = new Camera();
 
 }
@@ -29,7 +30,7 @@ draw_quad(0.0,0.0,0);
 
 void Game::Idle(float delta_time)
 {
-
+this->delta = delta_time;
 
 }
 
