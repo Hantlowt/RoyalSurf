@@ -4,21 +4,30 @@
 #define WIDTH 1024
 #define HEIGHT 768
 
-
+int oldTimeSinceStart = 0;
 Base *base;
 
-static float current_time = 0;
-static float last_time = 0;
-float delta_time = 1;
+void Draw(void)
+{
+glEnable(GL_CULL_FACE);
+glMatrixMode(GL_MODELVIEW);
+glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) ;
+glLoadIdentity();
+base->Draw();
+glFlush();
+}
+
 
 void Idle(void)
 {
 
-  last_time = current_time;
-  current_time = glutGet(GLUT_ELAPSED_TIME);
-  delta_time = current_time - last_time;
+  int timeSinceStart = glutGet(GLUT_ELAPSED_TIME);
+     int delta_time = timeSinceStart - oldTimeSinceStart;
+     oldTimeSinceStart = timeSinceStart;
+
   base->Idle(delta_time);
 
+Draw();
 }
 void Reshape(int x, int y)
 {
@@ -29,15 +38,7 @@ void Reshape(int x, int y)
     glMatrixMode(GL_MODELVIEW);
     glViewport(0,0,x,y);
 }
-void Draw(void)
-{
-glEnable(GL_CULL_FACE);
-glMatrixMode(GL_MODELVIEW);
-glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) ;
-glLoadIdentity();
-base->Draw();
-glFlush();
-}
+
 void MouseFunc(int button, int state, int x, int y)
 {
 base->MouseFunc(button, state, x, y);
