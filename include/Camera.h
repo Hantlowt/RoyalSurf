@@ -8,6 +8,8 @@ class Camera
         Camera();
         ~Camera();
         void Draw();
+        GLfloat get_camera_position_x();
+        GLfloat get_camera_position_y();
     private:
     struct Position
     {

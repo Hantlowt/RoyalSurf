@@ -8,5 +8,5 @@
 
 void vBitmapOutput(GLfloat x, GLfloat y, char* string, void* font, GLfloat a, GLfloat b, GLfloat c);
 void ChangeBackgroundColor(GLfloat r, GLfloat v, GLfloat b, GLfloat transparency);
-
+void draw_quad(int x, int y, GLint texture);
 #endif // DRAW_H

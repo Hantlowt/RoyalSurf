@@ -13,19 +13,10 @@ class Base
         void Idle(float delta_time);
         void Draw();
         void Reshape();
+        void MouseFunc(int button, int state, int x, int y);
         bool isOpen();
     private:
     bool m_isOpen;
-    struct Mouse
-    {
-    int x;
-    int y;
-    bool left;
-    bool center;
-    bool right;
-    };
-    typedef struct Mouse Mouse;
-    Mouse mouse;
     enum GameStat
     {
     MENU, GAME

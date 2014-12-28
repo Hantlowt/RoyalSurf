@@ -11,6 +11,7 @@ class Game
         void Init();
         void Idle(float delta_time);
         void Draw();
+        void MouseFunc(int button, int state, int x, int y);
     private:
     int m_score;
 

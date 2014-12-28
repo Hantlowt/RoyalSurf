@@ -53,10 +53,12 @@
 			<Add library="/usr/lib/x86_64-linux-gnu/libglut.a" />
 		</Linker>
 		<Unit filename="include/Base.h" />
+		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Draw.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Base.cpp" />
+		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Draw.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Extensions>

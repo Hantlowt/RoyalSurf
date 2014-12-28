@@ -5,12 +5,7 @@
 Base::Base()
 {
 this->m_isOpen = true;
-    this->mouse.x = 0;
-    this->mouse.y = 0;
-    this->mouse.left = false;
-    this->mouse.center = false;
-    this->mouse.right = false;
-    this->gamestat = GAME;
+this->gamestat = GAME;
 
 }
 
@@ -19,7 +14,13 @@ Base::~Base()
 
 }
 
-
+void Base::MouseFunc(int button, int state, int x, int y)
+{
+if(gamestat==GAME)
+{
+game->MouseFunc(button, state, x, y);
+}
+}
 
 bool Base::isOpen()
 {
