@@ -33,6 +33,7 @@ void Base::Init()
 if(this->gamestat==GAME)
 {
 game = new Game();
+game->Init();
 }
 
 }

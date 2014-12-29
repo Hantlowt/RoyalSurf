@@ -10,6 +10,7 @@ class Camera
         ~Camera();
         void Draw();
         void Move(int x, int y, GLfloat speed_x, GLfloat speed_y, float delta_time);
+        void Teleport(int x, int y);
         GLfloat get_camera_position_x();
         GLfloat get_camera_position_y();
     private:

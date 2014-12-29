@@ -3,6 +3,7 @@
 #include "Draw.h"
 #include <iostream>
 #include "Camera.h"
+#include "Map.h"
 
 class Game
 {
@@ -27,6 +28,7 @@ class Game
     Background_Color m_background_color;
 
     Camera *camera;
+Map *m_map;
 
 
 };

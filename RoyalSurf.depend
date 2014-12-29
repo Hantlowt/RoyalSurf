@@ -7,7 +7,7 @@
 	<stdio.h>
 	<GL/glut.h>
 
-1419725573 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Base.cpp
+1419854814 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Base.cpp
 	"Base.h"
 	"Game.h"
 
@@ -15,16 +15,18 @@
 	<stdio.h>
 	"Game.h"
 
-1419709951 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/main.cpp
+1419796501 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/main.cpp
 	<GL/glut.h>
 	<iostream>
 	"Base.h"
 
-1419709991 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Game.h
+1419854654 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Game.h
 	"Draw.h"
+	<iostream>
 	"Camera.h"
+	"Map.h"
 
-1419726554 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Game.cpp
+1419854830 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Game.cpp
 	"Game.h"
 
 1419419366 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Draw.h
@@ -37,9 +39,24 @@
 1419726155 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Draw.cpp
 	"Draw.h"
 
-1419725744 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Camera.h
+1419849343 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Camera.h
 	<GL/glut.h>
+	<iostream>
 
-1419725847 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Camera.cpp
+1419852197 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Camera.cpp
 	"Camera.h"
+
+1419855113 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Tile.h
+	"Draw.h"
+	<iostream>
+
+1419855216 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Tile.cpp
+	"Tile.h"
+
+1419855324 source:/home/hantlowt/Bureau/RSnew/RoyalSurf/src/Map.cpp
+	"Map.h"
+
+1419855187 /home/hantlowt/Bureau/RSnew/RoyalSurf/include/Map.h
+	"Tile.h"
+	<iostream>
 

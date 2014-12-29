@@ -56,11 +56,15 @@
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/Draw.h" />
 		<Unit filename="include/Game.h" />
+		<Unit filename="include/Map.h" />
+		<Unit filename="include/Tile.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Base.cpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Draw.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/Tile.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
