@@ -8,9 +8,11 @@ this->m_background_color.G = 1;
 this->m_background_color.B = 1;
 this->m_background_color.T = 0;
 this->delta = 1;
+this->m_map_size = 20;
+this->m_map_part = 1;
+loader = new Loader();
 camera = new Camera();
-m_map = new Map(20);
-
+m_map = new Map(m_map_size, m_map_part, *loader);
 }
 
 Game::~Game()
@@ -20,6 +22,7 @@ Game::~Game()
 
 void Game::Init()
 {
+loader->Init_Texture_Tiles(1);
 m_map->Init();
 }
 

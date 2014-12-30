@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Camera.h"
 #include "Map.h"
+#include "Loader.h"
 
 class Game
 {
@@ -27,8 +28,12 @@ class Game
     typedef struct Background_Color Background_Color;
     Background_Color m_background_color;
 
+Loader *loader;
     Camera *camera;
 Map *m_map;
+
+int m_map_size;
+int m_map_part;
 
 
 };
